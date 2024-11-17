@@ -1,0 +1,83 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+  margin: 5px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 350px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: white;
+}
+.skills-box {
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 15px;
+  list-style-type: none;
+}
+
+.small-box {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+li.small-box {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #d3d3d3;
+  min-width: 80px;
+}
+
+li.small-box:hover {
+  transform: scale(1.05);
+}
+
+button.small-box {
+  border-radius: 5px;
+  color: white;
+  border: none;
+  background-color: #007bff;
+}
+
+button.small-box:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}

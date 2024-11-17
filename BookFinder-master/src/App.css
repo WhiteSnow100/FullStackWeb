@@ -1,0 +1,22 @@
+/* 전체 페이지 높이를 100%로 고정 */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* body 전체에 스크롤이 생기지 않도록 */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 전체 화면 높이를 100%로 */
+  overflow: hidden; /* .App에서도 스크롤이 생기지 않도록 */
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  overflow: hidden; /* 검색 영역에만 스크롤이 생기도록 */
+}

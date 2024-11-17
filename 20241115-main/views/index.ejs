@@ -1,0 +1,12 @@
+<% include header %> <% if (entries.length) { %> <%
+entries.forEach(function(entry) { %>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="text-muted pull-right"><%= entry.published %></div>
+    <%= entry.title %>
+  </div>
+  <div class="panel-body"><%= entry.body %></div>
+</div>
+<% }) %> <% } else { %> 등록된 글이 하나도 없습니다.
+<a href="/new-entry">민원 남기기</a>
+<% } %> <% include footer %>

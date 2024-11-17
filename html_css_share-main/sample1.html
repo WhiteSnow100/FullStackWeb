@@ -1,0 +1,103 @@
+<!-- ! 를 입력하면 emmet 으로 html 틀이 자동 완성 된다-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello HTML</title>
+    <link href="sample1.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>H1: 이것은 가장 큰 제목입니다.</h1>
+    <h2>H2</h2>
+    <h3>H3</h3>
+    <h4>H4</h4>
+    <h5>H5</h5>
+    <h6>H6: 이것은 제일 작은 제목입니다.</h6>
+    <!-- h1만 사용할 것을 권장 -->
+
+    <p>
+      이것은 문단입니다. <br />여러 문장으로 구성된 텍스트를 표현할 수 있습니다.
+    </p>
+    <p>이것은 두 번째 문단입니다.</p>
+
+    <!-- 줄바꿈 -->
+    <br />
+
+    <!-- 가로선 -->
+    <hr />
+
+    <!-- b bold 단순히 진하게 표시 -->
+    <b>bold</b> not bold
+    <br />
+    <!-- s strong 강조하면서 진하게 표시 / 시맨틱 -->
+    <strong>strong</strong> strong
+    <br />
+    <!-- a anchor 하이퍼링크  -->
+    <a href="https://www.naver.com"
+      >이 링크를 클릭하세요. 네이버로 이동합니다.</a
+    >
+    <br />
+    <img src="profile.png" alt="profile.png" />
+    <!-- ul 순서가 없는 항목 -->
+    <ul>
+      <li>항목</li>
+      <li>항목</li>
+      <li>항목</li>
+    </ul>
+    <!-- ol ordered list 순서가 있는 항목 -->
+    <ol>
+      <li>첫 번째 항목</li>
+      <li>두 번째 항목</li>
+      <li>세 번째 항목</li>
+    </ol>
+    <div style="background-color: skyblue">
+      <h2>섹션 제목</h2>
+      <p>이것은 섹션 내의 문단입니다.</p>
+    </div>
+    <table border="1">
+      <tr>
+        <th>이름</th>
+        <th>나이</th>
+        <th>직업</th>
+      </tr>
+      <tr>
+        <td>이다영</td>
+        <td>29</td>
+        <td>개발자</td>
+      </tr>
+      <tr>
+        <td>김민정</td>
+        <td>20</td>
+        <td>개발자</td>
+      </tr>
+    </table>
+
+    <!-- form 태그는 원래 action 속성을 통해 백엔드 API와 소통 가능하다.-->
+    <form>
+      <label for="name">이름 : </label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="이름을 입력하세요."
+      />
+      <label for="name">나이 : </label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        placeholder="나이를 입력하세요."
+      />
+      <label for="name">생일 : </label>
+      <input
+        type="date"
+        id="birthday"
+        name="birthday"
+        placeholder="생일을 입력하세요."
+      />
+      <button type="submit">제출</button>
+    </form>
+  </body>
+</html>
